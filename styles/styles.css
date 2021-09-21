@@ -1,0 +1,170 @@
+html {
+  background-color: #FFFAF0;
+  font-size: 20px;
+}
+
+p{
+font-family: 'Playfair Display', serif;
+text-align:center;
+}
+
+script.player {
+        font-family: 'helvetica neue', helvetica, sans-serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        border: 2px solid rgba(0,0,200,0.6);
+        background: rgba(0,0,200,0.3);
+        color: rgba(0,0,200,0.6);
+        box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
+        border-radius: 10px;
+        padding: 3px 10px;
+        display: inline-block;
+        cursor: pointer;
+      }
+
+nav{
+background-color: white;
+padding-bottom:10px;
+padding-top: 10px;}
+
+div.first{
+            width: 25%;
+            display: inline-block;
+            background-color: #FFEBCD;
+			margin:20px;
+			text-align:center;
+			font-family: "Playfair Display", serif, "Times New Roman";
+			text-transform: uppercase;
+			font-size:1.5em;
+			padding: 50px;
+}
+div.second{
+            width: 25%;
+            display: inline-block;
+            background-color: #FFEBCD;
+			margin:20px;
+			text-align: center;
+			font-family: "Playfair Display", serif, "Times New Roman";
+			text-transform: uppercase;
+			font-size: 1.5em;
+			padding: 50px;
+}
+div.third{
+            width: 25%;
+            display: inline-block;
+            background-color: #FFEBCD;
+			margin:20px;
+			text-align: center;
+			font-family: "Playfair Display", serif, "Times New Roman";
+			text-transform: uppercase;
+			font-size: 1.5em;
+			padding: 50px;
+}
+form.searchQueryLayout{
+	margin: 20px;
+	text-align:center;
+}
+
+
+h1.eikeTitel{
+	font-family: "Playfair Display", serif, "Times New Roman";
+	text-align: center;
+	background-color: #FFF8DC;
+	background-image:url("C:\Users\TAAEBIS1\OneDrive - Swisscom\BFH\Selbststudium\website-creator\test-site\images\oak-wood-texture.jpg");
+	margin: 50px;
+	padding: 50px;
+	letter-spacing: 20px;
+	font-size:5vw;
+}
+
+.noisyFormat{
+	font-family: Arial;
+	display:inline-block;
+	padding:20px;
+	margin: 10px;
+	background-color:#FFF8DC;
+	text-align:center;
+	width:50%;
+	float:left;
+}
+p.noisyFormat{
+	background-color: white;
+}
+
+.rightSideColumn{
+	font-family: Arial;
+	display:inline-block;
+	padding:20px;
+	margin: 10px;
+	margin-right:20px;
+	background-color:#FFF8DC;
+	width:40%;
+}
+p.rightSideColumn{
+	text-indent:20px;}
+	
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 20 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.myDiv {
+		border: 5px outset yellow;
+		background-color: lightgreen;
+		text-align: center;
+		color: orange;
+		}
+
+	
+div.foreignWords{
+	background-color: #FFEBCD;
+	text-align:center;
+	padding: 20px;
+	font-size: 1.5em;
+	width: 95%;
+	margin-top: 100px;
+	margin-left: 20px;
+	display:block;
+}
+a.acorn{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.guessingGameBody{
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 10 auto;
+		background-color: #FFEBCD;
+      }
+
+      .lastResult {
+        color: white;
+        padding: 3px;
+      }

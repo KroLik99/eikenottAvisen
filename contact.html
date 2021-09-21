@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My contacts page</title>
+  </head>
+
+  <body>
+    <h1>This is my contacts page</h1>
+<h3>Show an email field (allows multiple email addresses). Separate each email address with a comma:</h3>
+<form action="/action_page.php">
+  <label for="emails">Enter email addresses:</label>
+  <input type="email" id="emails" name="emails" multiple>
+  <input type="submit">
+</form>
+
+<address>
+Written by <a href="mailto:eikenott.avisen@gmail.com">Isabelle</a>.<br> 
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+
+    <p>The <a href="#Mailing_address">company mailing address</a> can be found at the bottom of this page.</p>
+
+    <p>Isabelle is the only person who works here, and she doesn't have a phone.</p>
+
+    <h2 id="Mailing_address"></h2>
+
+    <address>52 Business street<br>
+    Very important town<br>
+    Commerce city<br>
+    CA, 999654</address>
+  </body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html> 
+<html lang="en-US"> 
+  <head> 
+    <meta charset="utf-8"> 
+    <meta name="author" content="Isabelle">
+    <meta name="description" content="Isabelle's website is a place to test out web development.">
+
+    <meta property="og:image" content="../test-site/images/Squirrel_posing.jpg">
+    <meta property="og:description" content="Isabelle's website is a test and learning tool to web development. That's why there is a squirrel.">
+    <meta property="og:title" content="Squirrel on the job.">
+
+    <title>Welcome to Isabelle's website</title> 
+    <link rel="icon" href="../test-site/images/favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="../test-site/styles/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+	<script src="../test-site/scripts/script.js" defer></script>
+	
+	
+	
+  </head> 
+
+  <body> 
+	<header>
+       	 <h1 class="eikeTitel">Eikenøtt Avisen</h1>
+	</header>
+		  <!-- put navigation menu just below here -->
+
+          <nav>
+		<div class="first"><a href="../test-site/navigation-menu/pictures.html">Pictures and Videos</a></div>
+		<div class="second"><a href="../test-site/navigation-menu/projects.html">Projects</a></div>
+		<div class="third"><a href="../test-site/navigation-menu/social.html">Social Media</a></div>
+
+		
+ 		<form class="searchQueryLayout">
+        		 <input type="search" name="q" placeholder="Search query">
+        		 <input type="submit" value="Go!">
+      		 </form>
+    	  </nav>
+	
+	<main>
+
+	<div class="noisyFormat"><h2>Penguins are going Skiing</h2>
+	<p>Due to climate change, penguins have decided to take a cool break and come skiing in our ski resorts. They have a preference for russian, norwegian, islandic and canadian slopes. Nordica seems to be their preferred 
+	ski brand, as it is easier for them to carve with their small feet.
+	Poor chaps. We wish you a lot of fun!</p>
+	</div>
+	<div class="noisyFormat"><h2>How noise affects us all!</h2>
+   	 <p> This is <strong>not</strong> how we should treat our environment. There is too much hustle and bustle going on! Take a break and relax. Easier said than done, 
+	 but you need to choose to let go and allow yourself to feel happy and find what feels good:</p>
+
+  	  <ol>  
+ 	   	<li> Sip some acorn coffee, </li> 
+		<li> Make yourself a lovely acorn porridge with berries,</li>
+		<li> Relax on the sofa.</li>
+  	  </ol>
+	  </div>
+
+<div class="rightSideColumn">
+  	  <p>This is the link I added for fun, don't actually know anything about the save the whales organization: <a href="https://savethewhales.org/">Let's help save the whales</a>. This is an unordered list of random things:<p/>
+
+	    <ul> 
+	        <li><strong>butter</strong> </li>
+	        <li> nuts</li>
+	        <li> Northern Lights</li>
+		<li> Plants </li>
+		    <ul>
+			<li> Don't forget to water the plants</li>
+		    </ul>
+		<li> hot cross buns </li>
+  	    </ul>
+
+		<h2>Never heard of a description list, but here is one:</h2>
+
+	<dl>
+	  <dt>Whales</dt>
+	  <dd>Big sea creatures that can either feed on plancton or you, if they get the chance.</dd>
+ 	 <dt>Ocean</dt>
+	  <dd>Very big, sometimes cold body of water. No body shaming intended.</dd>
+	  <dt> Animals</dt>
+	</dl>
+</div>
+  	 
+
+<!-- foreign words -->
+<div class="foreignWords">
+ <p> It's <strong><em>important</em></strong> to also keep in mind, that if you are in this situation: <span lang ="no">å sitte med skjegget i postkassen</span>. Better stay away from mailboxes, or shave your beard.</p>
+ <p> If you're in the habit of getting too close to mailboxes, check out the following website. It might help: </p> <a href="https://www.lifeinnorway.net/norwegian-phrases/">norwegian phrases</a> 
+</div>
+
+<a class="acorn" href="https://sustainabledish.com/the-acorn-a-never-to-be-forgotten-food/"><img src="../test-site/images/acorn.png" 
+alt="acorn image that links to a recipe of acorn porridge"
+width="600"
+height="600">
+</a>
+
+	<button class="favorite styled"
+        type="button">
+    Please Don't Click Me
+	</button>
+
+
+	<h1 class="guessingGameBody">Number guessing game</h1>
+
+    <p class="guessingGameBody">We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+	  <div class="form guessingGameBody">
+      <label for="guessField">Enter a guess: </label>
+      <input type="text" id="guessField" class="guessField">
+      <input type="submit" value="Submit guess" class="guessSubmit">
+      </div>
+
+    <div class="resultParas guessingGameBody">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+
+    <script>
+
+      // Your JavaScript goes here
+
+	let randomNumber = Math.floor(Math.random() * 100) + 1;
+
+	const guesses = document.querySelector('.guesses');
+	const lastResult = document.querySelector('.lastResult');
+	const lowOrHi = document.querySelector('.lowOrHi');
+
+	const guessSubmit = document.querySelector('.guessSubmit');
+	const guessField = document.querySelector('.guessField');
+
+	let guessCount = 1;
+	let resetButton;
+	
+	function checkGuess() {
+   let userGuess = Number(guessField.value);
+  if (guessCount === 1) {
+    guesses.textContent = 'Previous guesses: ';
+  }
+  guesses.textContent += userGuess + ' ';
+
+  if (userGuess === randomNumber) {
+    lastResult.textContent = 'Congratulations! You got it right!';
+    lastResult.style.backgroundColor = 'green';
+    lowOrHi.textContent = '';
+    setGameOver();
+  } else if (guessCount === 10) {
+    lastResult.textContent = '!!!GAME OVER!!!';
+    setGameOver();
+  } else {
+    lastResult.textContent = 'Wrong!';
+    lastResult.style.backgroundColor = 'red';
+    if(userGuess < randomNumber) {
+      lowOrHi.textContent = 'Last guess was too low!';
+    } else if(userGuess > randomNumber) {
+      lowOrHi.textContent = 'Last guess was too high!';
+    }
+  }
+
+  guessCount++;
+  guessField.value = '';
+  guessField.focus();
+
+}
+checkGuess();
+guessSubmit.addEventListener('click', checkGuess);
+
+
+function setGameOver() {
+  guessField.disabled = true;
+  guessSubmit.disabled = true;
+  resetButton = document.createElement('button');
+  resetButton.textContent = 'Start new game';
+  document.body.append(resetButton);
+  resetButton.addEventListener('click', resetGame);
+}
+
+function resetGame() {
+  guessCount = 1;
+
+  const resetParas = document.querySelectorAll('.resultParas p');
+  for (let i = 0 ; i < resetParas.length ; i++) {
+    resetParas[i].textContent = '';
+  }
+
+  resetButton.parentNode.removeChild(resetButton);
+
+  guessField.disabled = false;
+  guessSubmit.disabled = false;
+  guessField.value = '';
+  guessField.focus();
+
+  lastResult.style.backgroundColor = 'white';
+
+  randomNumber = Math.floor(Math.random() * 100) + 1;
+}
+    </script>
+	
+	
+	
+
+    <p>Want to contact a specific staff member? Find details on our <a href="../test-site/contact.html">contacts page</a>.</p>
+
+    <p>Want to write us a letter? Use our <a href="../test-site/contacts.html#Mailing_address">mailing address</a>.</p>
+
+<div class="myDiv">
+  <h2>This is a heading in a div element</h2>
+  <p>This is some text in a div element.</p>
+</div>
+
+
+<script class="player">
+      const para = document.querySelector('p');
+
+      para.addEventListener('click', updateName);
+
+      function updateName() {
+        let name = prompt('Enter a new name');
+        para.textContent = 'Player 1: ' + name;
+      }
+    </script>
+
+
+</main>
+ <!-- And here is our main footer that is used across all the pages of our website -->
+
+    <footer>
+      <p>©Copyright 2050 by nobody. All rights reversed.</p>
+    </footer>
+  </body> 
+</html>
